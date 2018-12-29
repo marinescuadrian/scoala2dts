@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+ body{
+     width:100%;
+     height:100%;
+     margin:0px;
+     padding:0px;
+     color:#7a7676;
+}
+ section {
+     width:100%;
+}
+ header, main{
+     display:block;
+     position:relative;
+}
+ header .container-fluid {
+     width:100%;
+     height:80px;
+     border-bottom: 3px solid #f7f7f7;
+     background-color:#17a2b8;
+}
+ header {
+     z-index:9999;
+}
+ main {
+     z-index: 2;
+}
+ .logo {
+     color:white;
+     background-color:#007bff;
+     border-top: 2px solid #f7f7f7;
+     border-radius: 0px 0px 5px 5px;
+}
+ .logo h1 {
+     font-family: 'Oswald', sans-serif;
+}
+ .menu > .row > .col {
+     float: left;
+     display: block;
+     color: #f2f2f2;
+     text-align: center;
+     text-decoration: none;
+     font-size: 17px;
+}
+ @media(min-width: 992px) {
+     main {
+         margin-top:-75px;
+    }
+     .menu {
+         width:69%;
+    }
+     .logo {
+         width:31%;
+    }
+     .menu > .row > .col {
+         height:90px;
+         line-height: 45px;
+         font-size:20px;
+         font-weight: bold;
+         text-align: center;
+         padding: 1rem 0;
+         margin-left:1rem;
+         color:#ffffff;
+         display:inline-block;
+         border-top: 2px solid #f7f7f7;
+         border-radius: 0px 0px 10px 10px;
+         text-decoration: none;
+         -webkit-box-shadow: 0 4px 25px rgba(210,224,233,.45);
+         box-shadow: 0 4px 25px rgba(210,224,233,.45);
+         -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+         transition: -webkit-box-shadow .3s ease-in-out;
+         -o-transition: box-shadow .3s ease-in-out;
+         transition: box-shadow .3s ease-in-out;
+         transition: box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+    }
+     .menu > .row > .col:nth-child(odd) {
+         background-color:#fd7e14;
+    }
+     .menu > .row > .col:nth-child(even) {
+         background-color:#28a745;
+    }
+     .menu > .row > .col:hover {
+         height:100px;
+         line-height: 50px;
+         -webkit-box-shadow: 0 4px 20px #cddbe4;
+         box-shadow: 0 4px 20px #cddbe4;
+    }
+}
+ .menu > .topnav > .icon {
+     display: none;
+}
+ #home > .container > .bg-home {
+     width:100%;
+}
+ .top-left > img, .top-right > img, .bottom-left > img, .bottom-right > img {
+     width:300px;
+}
+ .top-left {
+     top: 2px;
+	 margin-left: -215px;;
+}
+ .top-right {
+     top: 70px;
+     right: 120px;
+}
+ .bottom-right {
+     bottom: 250px;
+     right: 110px;
+}
+ .bottom-left {
+     bottom: 137px;
+     margin-left: -292px;
+}
+ @media(max-width: 992px) {
+     header .container-fluid {
+         height:120px;
+    }
+     .menu > .topnav.responsive {
+         margin-top:3rem;
+    }
+     .logo {
+         width:100%;
+    }
+     .menu > .topnav a:not(:last-child) {
+         display: none;
+    }
+     .menu > .topnav > .icon {
+         display: block;
+         position: absolute;
+         right: 0;
+         top: 0;
+         color:#ffffff;
+         padding: 10px;
+		 font-size: 30px;
+    }
+     .menu > .topnav.responsive a.icon {
+         position: absolute;
+         right: 0;
+         bottom: 0;
+    }
+     .menu > .topnav.responsive a {
+         float: none;
+         display: block;
+    }
+}
+ @media(max-width: 1200px) {
+     .top-left {
+         display: none;
+    }
+	 #home iframe, #googlemaps {
+		 height: 300px !important;	
+	}
+}
+ @media(max-width: 1870px) {
+     .top-right, .bottom-left, .bottom-right {
+         display: none;
+    }
+}
+#home iframe, #googlemaps {
+	height: 500px;	
+}
+#home .card {
+	border: none;
+    border-radius: 0;
+}
+#home .card .card-title {
+	font-size:2rem;
+	font-weight:700;
+}
+#home .card .card-footer {
+	background-color: rgba(0,0,0,0);
+    border-top: 0;
+}
+#home .card .card-footer a {
+	padding: 4px 12px;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+	text-decoration: none;
+	margin-bottom: 0.5rem;
+}
+#home .card .card-footer a:hover {
+	background-color: rgba(0,0,0,0.5);
+	color:#ffffff !important;
+}

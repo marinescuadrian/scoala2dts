@@ -1,0 +1,44 @@
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		{% if page.title == "Acasă" %}
+			<title>{{ site.title }}</title>
+			<meta name="twitter:title" content='{{ site.title }}'>
+			<meta property="og:site_name" content='{{ site.title }}'/>
+			<meta property="og:title" content='{{ site.title }}'>
+		{% else %}
+			<title>{{ page.title }} &middot; {{ site.title }}</title>
+			<meta name="twitter:title" content='{{ page.title }} &middot; {{ site.title }}'>
+			<meta property="og:site_name" content='{{ page.title }} &middot; {{ site.title }}'/>
+			<meta property="og:title" content='{{ page.title }} &middot; {{ site.title }}'>
+		{% endif %}		
+		{% if page.description %}
+			<meta name="description" content='{{page.description}}'>
+			<meta name="twitter:description" content='{{page.description}}'>
+			<meta property="og:description" content='{{page.description}}'>
+		{% else %}
+			<meta name="description" content='{{site.description}}'>
+			<meta name="twitter:description" content='{{site.description}}'>
+			<meta property="og:description" content='{{site.description}}'>
+		{% endif %}
+		<meta name="author" content='{{ site.title }}'>		
+		<meta name="robots" content="index, follow" />
+		<meta name="twitter:card" content="summary">
+		{% if site.twitter %}
+			<meta name="twitter:creator" content="{{site.twitter}}">
+		{% endif %}
+		{% if page.image %}
+			<meta name="twitter:image" content="{{page.image}}"/>
+			<meta property="og:image" content="{{page.image}}"/>
+		{% else %}
+			<meta name="twitter:image" content="{{site.defaultsocialimage}}"/>
+			<meta property="og:image" content="{{site.defaultsocialimage}}"/>
+		{% endif %}
+		<meta property="og:url" content="{{site.url}}"/>
+		<meta property="og:type" content="website">		
+		<link rel="canonical" href="{{site.url}}">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>

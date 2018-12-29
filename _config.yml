@@ -1,0 +1,9 @@
+markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
+highlighter: rouge
+
+title:          'Școala Generală "Alice Voinescu"'
+description:    'Școala Generală "Alice Voinescu" - Bd. Tudor Vladimirescu, nr. 71 A, cod postal 220016, Drobeta-Turnu-Severin, Mehedinți'
+url:            'https://adrian.marinescu.ch/scoala2dts'
+
+defaultsocialimage: 'https://adrian.marinescu.ch/scoala2dts/assets/images/og_social.png'
