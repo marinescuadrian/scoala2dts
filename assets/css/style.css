@@ -100,15 +100,15 @@
 	 margin-left: -215px;;
 }
  .top-right {
-     top: 70px;
+     top: 215px;
      right: 120px;
 }
  .bottom-right {
-     bottom: 250px;
+     bottom: 765px;
      right: 110px;
 }
  .bottom-left {
-     bottom: 137px;
+     bottom: 600px;
      margin-left: -292px;
 }
  @media(max-width: 992px) {
