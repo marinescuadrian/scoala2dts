@@ -92,25 +92,6 @@
  #home > .container > .bg-home {
      width:100%;
 }
- .top-left > img, .top-right > img, .bottom-left > img, .bottom-right > img {
-     width:300px;
-}
- .top-left {
-     top: 2px;
-	 margin-left: -215px;;
-}
- .top-right {
-     top: 215px;
-     right: 120px;
-}
- .bottom-right {
-     bottom: 765px;
-     right: 110px;
-}
- .bottom-left {
-     bottom: 600px;
-     margin-left: -292px;
-}
  @media(max-width: 992px) {
      header .container-fluid {
          height:120px;
@@ -144,17 +125,9 @@
     }
 }
  @media(max-width: 1200px) {
-     .top-left {
-         display: none;
-    }
 	 #home iframe, #googlemaps {
 		 height: 300px !important;	
 	}
-}
- @media(max-width: 1870px) {
-     .top-right, .bottom-left, .bottom-right {
-         display: none;
-    }
 }
 #home iframe, #googlemaps {
 	height: 500px;	
