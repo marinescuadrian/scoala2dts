@@ -2,7 +2,6 @@
   "name": "scoala2dts-website",
   "version": "1.0.0",
   "description": "This is a website for Scoala 2 DTS",
-  "main": "index.js",
   "author": "Adrian Marinescu",
   "license": "GPL-3.0"
 }
