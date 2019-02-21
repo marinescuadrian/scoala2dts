@@ -1,7 +1,9 @@
 (function($) {
     'use strict'
     $(document).ready(function() {
-		googleMaps();
+		if($("#googlemaps").length > 0) {
+			googleMaps();
+		}		
 	});
 })(jQuery);
 $('.topnav > .icon').click( function() {
