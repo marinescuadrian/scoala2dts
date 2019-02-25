@@ -159,7 +159,7 @@
 .text-content h1 {
 	font-family: 'Russo One', sans-serif;	
 }
-.text-content p {
+.text-content p, li {
 	font-family: 'Barlow Condensed', sans-serif;
 	text-align: justify;
 	text-indent: 15px;
