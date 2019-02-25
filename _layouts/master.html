@@ -23,7 +23,13 @@
 				</div>			
 			</header>
 			<main>
-			{{ content }}
+			<section id="home">
+				<div class="container p-0 pb-3">
+					<img class="bg-home" src="{{site.url}}/assets/images/{{page.image}}">
+					{% include announcement-bar.html %}
+				{{ content }}
+				</div>
+			</section>
 			{% include footer.html %}
 			</main>
 		</div>
